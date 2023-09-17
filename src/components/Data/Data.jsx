@@ -12,14 +12,6 @@ const Data = ({ TodoData, setTodoData }) => {
     let data = TodoData.filter((ele, i) => ele.id !== todoId);
     setTodoData(data);
   };
-
-  // const change = (todoId) =>{
-  //   let data = TodoData.map((idx)=>{
-  //     idx == todoId
-  //   })
-  //   data.status = "true";
-  //   setTodoData(data);
-  // };
   return (
     <div className={container}>
       {TodoData.map((todo, ind) => (
